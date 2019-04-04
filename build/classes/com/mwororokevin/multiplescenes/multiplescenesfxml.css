@@ -1,0 +1,13 @@
+.jfx-button{
+    -fx-background-color: wheat;
+    -fx-text-fill: #111111;
+}
+
+.jfx-button:hover{
+    -fx-background-color: #111111;
+    -fx-text-fill: wheat;
+}
+
+#vbox{
+    -fx-background-color: #DDDDDD;
+}

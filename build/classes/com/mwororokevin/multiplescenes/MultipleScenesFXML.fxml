@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.mwororokevin.multiplescenes.MultipleScenesFXMLController">
+    <stylesheets>
+        <URL value="@multiplescenesfxml.css" />
+    </stylesheets>
+   <children>
+      <VBox maxHeight="900.0" maxWidth="250.0" minHeight="900.0" minWidth="250.0" prefHeight="900.0" prefWidth="250.0">
+         <padding>
+            <Insets bottom="150.0" top="150.0" />
+         </padding>
+         <children>
+            <JFXButton buttonType="RAISED" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" onAction="#loadFirstScene" prefHeight="70.0" prefWidth="250.0" text="First Scene">
+               <font>
+                  <Font name="Gabriola" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="160.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" onAction="#loadSecondScene" prefHeight="70.0" prefWidth="250.0" text="Second Scene">
+               <font>
+                  <Font name="Gabriola" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="235.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" onAction="#loadThirdScene" prefHeight="70.0" prefWidth="250.0" text="Third Scene">
+               <font>
+                  <Font name="Gabriola" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="310.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" onAction="#loadFourthScene" prefHeight="70.0" prefWidth="250.0" text="Fourth Scene">
+               <font>
+                  <Font name="Gabriola" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="545.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" onAction="#loadFifthScene" prefHeight="70.0" prefWidth="250.0" text="Fifth Scene">
+               <font>
+                  <Font name="Gabriola" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox id="vbox" layoutX="250.0" prefHeight="175.0" prefWidth="950.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="926.0" text="By clicking any of the buttons on the left the anchorpane below this " textFill="#222222">
+               <font>
+                  <Font name="Gabriola" size="30.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="926.0" text="hbox will be replaced by different scenes loaded from different packages." textFill="#222222">
+               <font>
+                  <Font name="Gabriola" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+      </VBox>
+      <AnchorPane fx:id="anchorPane" layoutX="250.0" layoutY="176.0" maxHeight="725.0" maxWidth="950.0" minHeight="725.0" minWidth="950.0" prefHeight="725.0" prefWidth="950.0" />
+   </children>
+</AnchorPane>
